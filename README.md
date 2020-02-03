@@ -17,26 +17,14 @@ In this course you will learn to build a web application without frameworks or u
 
 Goal: Retrieve data from an API and render it in an overview page.
 
-[Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-1920/blob/master/course/week-1.md)
-
-[Slides](https://drive.google.com/open?id=1Rjl9xqXoKniQSRJPdkU1O5YwWC33SJK8KiV0a-H_xZU)
-
 ### Week 2 - Design and Refactor 🛠
 
 Goal: Design the web app. Add routes and states. Rendering detail page.
-
-[Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-1920/blob/master/course/week-2.md)
-
-[Slides](https://drive.google.com/open?id=1IqQeu1m0dQiSC_KCvrn8eencAgtYe7X6qT-gm0n9Bmc)
 
 ### Week 3 - Wrapping up 🎁
 
 Goal:
 Manipulate data. Split code into modules. Reflect on end result
-
-[Excercises](https://github.com/cmda-minor-web/web-app-from-scratch-1920/blob/master/course/week-3.md)
-
-[Slides](https://drive.google.com/open?id=1BSzGYNLMgtHD4HRnK7f0DgyTv4Pg3xsQwD_eYNo7v0Y)
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
