@@ -1,9 +1,8 @@
 
-let requestLink = 'https://ghibliapi.herokuapp.com/films';
+const requestLink = 'https://ghibliapi.herokuapp.com/films';
+const mainContainer = document.getElementById("myData");
 
-fetch(requestLink, {
-
-})
+fetch(requestLink)
 .then(response => {
     if(response.ok){
         console.log("SUCCESS");
@@ -12,9 +11,30 @@ fetch(requestLink, {
     }
     return response.json(); // returns promise object
 })
-.then(json => {
-    console.log(json); // returns data in promise
+.then((json) => {
+    getWantedData(json)
 })
     .catch( err => {
         console.log(err);
     });
+
+function getWantedData(data){
+    const cleanData = data.map((item) => {
+       return  {
+           title: item.title,
+           desc: item.description
+       }
+    });
+    display(cleanData)
+}
+
+function display(wantedData){
+
+    for(let i = 0; i < wantedData.length; i++){
+        let div = document.createElement("div");
+        div.innerHTML = 'movies: ' + wantedData[i].title;
+        mainContainer.appendChild(div);
+    }
+
+}
+
