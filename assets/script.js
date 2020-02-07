@@ -1,6 +1,9 @@
 const requestLink = 'https://ghibliapi.herokuapp.com/films';
 const mainContainer = document.getElementById("myData");
 
+/**
+ *
+ */
 fetch(requestLink)
     .then(response => {
         if (response.ok) {
@@ -17,6 +20,10 @@ fetch(requestLink)
         console.log(err);
     });
 
+/**
+ *
+ * @param data
+ */
 function getWantedData(data) {
     const cleanData = data.map((item) => {
         return {
@@ -27,8 +34,11 @@ function getWantedData(data) {
     display(cleanData)
 }
 
+/**
+ *
+ * @param wantedData
+ */
 function display(wantedData) {
-
     for (let i = 0; i < wantedData.length; i++) {
         let div = document.createElement("div");
         div.innerHTML = 'movies: ' + wantedData[i].title;
