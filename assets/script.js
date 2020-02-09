@@ -1,10 +1,16 @@
-const requestLink = 'https://ghibliapi.herokuapp.com/films';
-const mainContainer = document.getElementById("myData");
+
+/**
+ * Object containing necessary information
+ */
+const data = {
+    requestLink : 'https://ghibliapi.herokuapp.com/films',
+    mainContainer : document.getElementById("myData")
+};
 
 /**
  *
  */
-fetch(requestLink)
+fetch(data.requestLink)
     .then(response => {
         if (response.ok) {
             console.log("SUCCESS");
@@ -14,36 +20,36 @@ fetch(requestLink)
         return response.json(); // returns promise object
     })
     .then((json) => {
-        getWantedData(json)
+        let cleanData = getCleanData(json);
+        display(cleanData);
     })
     .catch(err => {
         console.log(err);
     });
 
 /**
- *
+ *Retrieves wanted data from the API
  * @param data
  */
-function getWantedData(data) {
+function getCleanData(data) {
     const cleanData = data.map((item) => {
         return {
             title: item.title,
             desc: item.description
         }
     });
-    display(cleanData)
+    return cleanData;
 }
 
 /**
- *
- * @param wantedData
+ *Takes data and displays it on webpage
+ * @param cleanData
  */
-function display(wantedData) {
-    for (let i = 0; i < wantedData.length; i++) {
+function display(cleanData) {
+    cleanData.forEach( e => {
         let div = document.createElement("div");
-        div.innerHTML = 'movies: ' + wantedData[i].title;
-        mainContainer.appendChild(div);
-    }
-
+        div.innerHTML = 'movies: ' + e.title;
+        data.mainContainer.appendChild(div);
+    });
 }
 
