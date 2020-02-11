@@ -26,15 +26,36 @@ Goal: Design the web app. Add routes and states. Rendering detail page.
 Goal:
 Manipulate data. Split code into modules. Reflect on end result
 
-<!-- Add a link to your live demo in Github Pages 🌐-->
-
+# Studio Ghibli movie discription
 <!-- ☝️ replace this description with a description of your own work -->
 
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
-
+###introduction
 <!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
+This site will show you the descriptions of the movies from this anime studio.
 
+## Learning goals
+
+* _You can add structure to your code by applying patterns. You can defend the choice for the chosen patterns_
+* _You can retrieve data, manipulate it and dynamically convert it to html elements using templating_
+* _You understand how you can work with an external API using asynchronous code_
+* _You understand how you can manage state in your application and you inform the user of state where necessary_
+
+[Rubric](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjZGWGPC_RMvTMry8YW5XOM79GEIdgS7I5JlOe6OeeOUdmv7ok1s9jQhzojNE4AsyzgL-jJCbRj1LN/pubhtml?gid=0&single=true)
+
+## Table of contents
 <!-- Maybe a table of contents here? 📚 -->
+- [Live demo](#heading)
+- [Installation](#heading)
+- [features](#heading)
+
+##Live demo
+[link to site](https://heralt.github.io/web-app-from-scratch-1920/)
+<!-- Add a link to your live demo in Github Pages 🌐-->
+##Installation
+To get access to this API you can use the Fetch API. You don't need a key to get access.
+##Features
+
+<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
 
 <!-- How about a section that describes how to install this project? 🤓 -->
 

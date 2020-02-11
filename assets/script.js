@@ -54,11 +54,11 @@ function display(cleanData) {
 }
 
 let hello = {
-    hello: 'hello',
-    goodbye: '<i>Goodbye</i>',
-    greeting: 'Howdy!',
-    'hi-label': 'Terve!'
+    hello:      'Hello',
+    goodbye:    '<i>Goodbye!</i>',
+    greeting:   'Howdy!',
+    'hi-label': 'Terve!' // Finnish i18n
 };
 
-Transparency.render(document.getElementById('container'),hello);
+Transparency.render(document.getElementById('container'), hello);
 
