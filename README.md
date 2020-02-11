@@ -44,16 +44,16 @@ This site will show you the descriptions of the movies from this anime studio.
 
 ## Table of contents
 <!-- Maybe a table of contents here? 📚 -->
-- [Live demo](#heading)
-- [Installation](#heading)
-- [features](#heading)
+- [Live demo](##heading)
+- [Installation](##heading)
+- [features](##heading)
 
-##Live demo
+## Live demo
 [link to site](https://heralt.github.io/web-app-from-scratch-1920/)
 <!-- Add a link to your live demo in Github Pages 🌐-->
-##Installation
+## Installation
 To get access to this API you can use the Fetch API. You don't need a key to get access.
-##Features
+## Features
 
 <!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
 
