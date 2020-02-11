@@ -29,7 +29,7 @@ Manipulate data. Split code into modules. Reflect on end result
 # Studio Ghibli movie discription
 <!-- ☝️ replace this description with a description of your own work -->
 
-###introduction
+### introduction
 <!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
 This site will show you the descriptions of the movies from this anime studio.
 
