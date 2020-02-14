@@ -53,8 +53,14 @@ This site will show you the descriptions of the movies from this anime studio.
 <!-- Add a link to your live demo in Github Pages 🌐-->
 ## Installation
 To get access to this API you can use the Fetch API. You don't need a key to get access.
+## App design
+These are the diagrams that reflect the final app designs I want to achieve.
+#### actor diagram
+![Actor diagram](diagrams/Ghibli_actor_diagram.png)
+#### interaction diagram
+![Interaction diagram](diagrams/interaction_diagram.png)
 ## Features
-
+//TO DO
 <!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
 
 <!-- How about a section that describes how to install this project? 🤓 -->

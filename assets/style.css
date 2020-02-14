@@ -1,0 +1,11 @@
+
+
+#myData {
+    display: flex;
+}
+
+.text {
+    padding: 0 20px 0 0;
+    margin: 0 3px 0 0;
+    border: solid pink 3px;
+}
