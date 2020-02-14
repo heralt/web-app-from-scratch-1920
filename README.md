@@ -33,13 +33,6 @@ Manipulate data. Split code into modules. Reflect on end result
 <!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
 This site will show you the descriptions of the movies from this anime studio.
 
-## Learning goals
-
-* _You can add structure to your code by applying patterns. You can defend the choice for the chosen patterns_
-* _You can retrieve data, manipulate it and dynamically convert it to html elements using templating_
-* _You understand how you can work with an external API using asynchronous code_
-* _You understand how you can manage state in your application and you inform the user of state where necessary_
-
 [Rubric](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjZGWGPC_RMvTMry8YW5XOM79GEIdgS7I5JlOe6OeeOUdmv7ok1s9jQhzojNE4AsyzgL-jJCbRj1LN/pubhtml?gid=0&single=true)
 
 ## Table of contents
