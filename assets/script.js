@@ -1,4 +1,3 @@
-
 /**
  * Object containing necessary information
  */
@@ -6,6 +5,13 @@ const data = {
     requestLink : 'https://ghibliapi.herokuapp.com/films',
     mainContainer : document.getElementById("myData")
 };
+
+function logo(){
+    let logo = document.createElement('img');
+    logo.src = '../diagrams/logo.png';
+    data.mainContainer.appendChild(logo);
+}
+logo();
 
 /**
  *
@@ -46,19 +52,25 @@ function getCleanData(data) {
  * @param cleanData
  */
 function display(cleanData) {
-    cleanData.forEach( e => {
-        let div = document.createElement("div");
-        div.innerHTML = 'movies: ' + e.title;
-        data.mainContainer.appendChild(div);
+    let container = document.createElement('div');
+    container.setAttribute('class','container');
+
+    data.mainContainer.appendChild(container);
+
+    cleanData.forEach(e => {
+        let card = document.createElement('div');
+        card.setAttribute('class','card');
+
+        let h1 = document.createElement('h1');
+        h1.textContent = e.title;
+
+        let p = document.createElement('p');
+        e.desc = e.desc.substring(0,300);
+        p.textContent = `${e.desc}...`;
+
+        container.appendChild(card);
+
+        card.appendChild(h1);
+        card.appendChild(p);
     });
 }
-
-let hello = {
-    hello:      'Hello',
-    goodbye:    '<i>Goodbye!</i>',
-    greeting:   'Howdy!',
-    'hi-label': 'Terve!' // Finnish i18n
-};
-
-Transparency.render(document.getElementById('container'), hello);
-
