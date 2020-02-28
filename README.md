@@ -45,7 +45,7 @@ This site will show you the descriptions of the movies from the famous Ghibli an
 Link to the site: [link](https://heralt.github.io/web-app-from-scratch-1920/)
 <!-- Add a link to your live demo in Github Pages 🌐-->
 ## Installation
-
+To install this, you must clone this repo and open it in a IDE of your choice. Then open the index.html in the browser you prefer.  
 <!-- Add a link to your live demo in Github Pages 🌐-->
 ## Features
 - Showsmovie description of studio Ghibli movies. 
