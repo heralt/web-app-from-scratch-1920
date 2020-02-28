@@ -9,8 +9,6 @@ In this course you will learn to build a web application without frameworks or u
 * _You understand how you can work with an external API using asynchronous code_
 * _You understand how you can manage state in your application and you inform the user of state where necessary_
 
-[Rubric](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjZGWGPC_RMvTMry8YW5XOM79GEIdgS7I5JlOe6OeeOUdmv7ok1s9jQhzojNE4AsyzgL-jJCbRj1LN/pubhtml?gid=0&single=true)
-
 ## Program
 
 ### Week 1 - Hello API 🐒
@@ -31,20 +29,29 @@ Manipulate data. Split code into modules. Reflect on end result
 
 ### introduction
 <!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
-This site will show you the descriptions of the movies from this anime studio.
-
-[Rubric](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjZGWGPC_RMvTMry8YW5XOM79GEIdgS7I5JlOe6OeeOUdmv7ok1s9jQhzojNE4AsyzgL-jJCbRj1LN/pubhtml?gid=0&single=true)
-
+This site will show you the descriptions of the movies from the famous Ghibli anime studio.
 ## Table of contents
 <!-- Maybe a table of contents here? 📚 -->
-- [Live demo](##heading)
-- [Installation](##heading)
-- [features](##heading)
+- [Live demo](#Live-Demo)
+- [Installation](#Installation)
+- [features](#Features)
+- [API](#API)
+- [App design](#App-design)
+- [built with](#built-with)
+- [Todo](#todo)
+- [Wishlist](#wishlist)
 
 ## Live demo
-[link to site](https://heralt.github.io/web-app-from-scratch-1920/)
+Link to the site: [link](https://heralt.github.io/web-app-from-scratch-1920/)
 <!-- Add a link to your live demo in Github Pages 🌐-->
 ## Installation
+
+<!-- Add a link to your live demo in Github Pages 🌐-->
+## Features
+- Showsmovie description of studio Ghibli movies. 
+## API
+The api that I used for this project is the [Ghibli API](https://ghibliapi.herokuapp.com/#section/Studio-Ghibli-API). This API 
+gives you information about 20 studio Ghibli movies. There is no key needed to access the api and there is no request limit.  ## Installation
 To get access to this API you can use the Fetch API. You don't need a key to get access.
 ## App design
 These are the diagrams that reflect the final app designs I want to achieve.
@@ -52,16 +59,11 @@ These are the diagrams that reflect the final app designs I want to achieve.
 ![Actor diagram](diagrams/Ghibli_actor_diagram.png)
 #### interaction diagram
 ![Interaction diagram](diagrams/interaction_diagram.png)
-## Features
-//TO DO
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
-
-<!-- How about a section that describes how to install this project? 🤓 -->
-
-<!-- ...but how does one use this project? What are its features 🤔 -->
-
-<!-- What external data source is featured in your project and what are its properties 🌠 -->
-
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
-
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
+## built with
+- [x] [Routie](http://projects.jga.me/routie/), a javascript routing library.
+- [ ] Transperancy
+## Todo
+- [x] Enabling viewing of different movies
+## Wishlist
+- [ ] Ability to filter different movies
+- [ ] Using template engine for templating 
