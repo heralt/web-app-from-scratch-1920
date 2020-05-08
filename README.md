@@ -67,3 +67,4 @@ These are the diagrams that reflect the final app designs I want to achieve.
 ## Wishlist
 - [ ] Ability to filter different movies
 - [ ] Using template engine for templating 
+- [ ] making code reflect diagrams
