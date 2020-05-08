@@ -3,71 +3,52 @@
  * Empties divs when switching screens
  * @param id of div to empty
  */
-function emptyScreen(id){
+function emptyScreen(id) {
+    document.getElementById(id).style.display = 'none';
     document.getElementById(id).innerHTML = "";
 }
 
-/**
- *Take filtered data and displays it on html page.
- * @param cleanData =
- */
-export function displayHome(cleanData) {
-    document.getElementById("movieDetails").style.display = 'none';
-    emptyScreen("movieDetails");
-    document.getElementById("overview").style.display = 'block';
-
-    let container = document.createElement('div');
-    container.setAttribute('id','movieContainer');
-
-    document.getElementById("overview").appendChild(container);
-
-    cleanData.forEach(e => {
-        let card = document.createElement('div');
-        card.setAttribute('class','card');
-
-        //Link and title of movie
-        let href = document.createElement('a');
-        href.setAttribute('href', `#movie/${e.id}`);
-        href.setAttribute('data-id', e.id);
-        href.innerHTML = `<h1 style="color: black">${e.title}</h1>`;
-
-        //short movie description
-        let p = document.createElement('p');
-        e.desc = e.desc.substring(0,300);
-        p.textContent = `${e.desc}...`;
-
-        //Put seperate movie cards in container and add details
-        container.appendChild(card);
-        card.appendChild(href);
-        card.appendChild(p);
-    });
+function display(id) {
+    document.getElementById(id).style.display = 'block';
 }
 
-/**
- *
- * @param cleanData
- */
-export function displayMovie(cleanData) {
-    document.getElementById("overview").style.display = 'none';
-    emptyScreen("overview");
-    document.getElementById("movieDetails").style.display = 'block';
-
+function createDiv(divID, divContainer) {
     let container = document.createElement('div');
-    container.setAttribute('id','detailContainer');
+    container.setAttribute('id', divID);
 
-    document.getElementById("movieDetails").appendChild(container);
-
-    let card = document.createElement('div');
-    card.setAttribute('class','card');
-
-    let title = document.createElement('h1');
-    title.textContent = cleanData.title;
-
-    let description = document.createElement('p');
-    description.textContent = cleanData.desc;
-
-
-    container.appendChild(card);
-    card.appendChild(title);
-    card.appendChild(description);
+    document.getElementById(divContainer).appendChild(container);
+    return container;
 }
+
+export const render = {
+    displayHome: function(cleanData){
+        emptyScreen("movieDetails");
+        display("overview");
+        let container = createDiv("movieContainer", "overview");
+        let cards = cleanData.map(e => {
+            return `<div class="card"><a href="#movie/${e.id}" data-id="${e.id}"><h1 style="color: black">${e.title}</h1></a>
+                <p>${e.desc.substring(0, 300)}...</p></div>`;
+        });
+        document.getElementById(container.id).innerHTML = cards.join('\n');
+    },
+    filterMovie: function(cleanData){
+        const searchBar = document.getElementById('search-movie');
+
+        searchBar.addEventListener("keyup", ev => {
+            const searchString = ev.target.value.toLowerCase();
+            const filteredMovies = cleanData.filter(movies => {
+                let movie = movies.title.toLowerCase();
+                return movie.includes(searchString);
+            });
+
+            render.displayHome(filteredMovies);
+        });
+    },
+    displayMovie: function (cleanData){
+        emptyScreen("overview");
+        display("movieDetails");
+        let container = createDiv("detailContainer", "movieDetails");
+        document.getElementById(container.id).innerHTML =
+            `<div class="card"><h1>${cleanData.title}</h1><p>${cleanData.desc}</p></div>`;
+    }
+};

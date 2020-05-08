@@ -9,9 +9,9 @@
 }
 
 #movieContainer {
-    display: flex;
-    flex-wrap: wrap;
-}
+     display: flex;
+     flex-wrap: wrap;
+ }
 
 .card {
     margin: 1rem;
@@ -32,4 +32,12 @@
 
 a {
     text-decoration: none;
+}
+
+#search-movie {
+    position: absolute;
+    top: 7cm;
+    left: 50%;
+    width: 20cm;
+    margin-left: -10cm;
 }
