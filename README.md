@@ -61,10 +61,10 @@ These are the diagrams that reflect the final app designs I want to achieve.
 ![Interaction diagram](diagrams/interaction_diagram.png)
 ## built with
 - [x] [Routie](http://projects.jga.me/routie/), a javascript routing library.
-- [ ] Transperancy
+- [x] Transperancy
 ## Todo
 - [x] Enabling viewing of different movies
 ## Wishlist
-- [ ] Ability to filter different movies
-- [ ] Using template engine for templating 
+- [x] Ability to filter different movies
+- [x] Using template engine for templating 
 - [ ] making code reflect diagrams
