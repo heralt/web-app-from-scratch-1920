@@ -1,5 +1,5 @@
 import {getMovie} from "./api.js";
-import {render} from "./render.js";
+import {render/*,test*/} from "./render.js";
 
 /**
  * @param data
@@ -8,7 +8,7 @@ import {render} from "./render.js";
 function getMoviedata(data) {
     let movieData = {
         title: data.title,
-        desc: data.description
+        desc: data.description,
     };
     return movieData;
 }
@@ -22,7 +22,8 @@ function getOverview(data) {
         return {
             id: item.id,
             title: item.title,
-            desc: item.description
+            desc: item.description,
+            score: item.rt_score
         }
     });
 }
@@ -38,6 +39,7 @@ export function init(){
             getMovie().then(json => {
                 render.displayHome(getOverview(json));
                 render.filterMovie(getOverview(json));
+                //test(getOverview(json))
             });
         },
         "": () => {
