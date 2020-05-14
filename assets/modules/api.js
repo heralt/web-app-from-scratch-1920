@@ -1,4 +1,8 @@
-
+/**
+ * retrieve data from API
+ * @param movieId
+ * @returns {Promise<Response>}
+ */
 export function getMovie(movieId){
     let baseLink = 'https://ghibliapi.herokuapp.com/films';
     let link = '';

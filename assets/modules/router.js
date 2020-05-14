@@ -28,6 +28,9 @@ function getOverview(data) {
     });
 }
 
+/**
+ * get routes and render API data
+ */
 export function init(){
     routie({
         "movie/:id": id => {

@@ -1,11 +1,22 @@
 import "../libraries/transparency/dist/transparency.min.js";
 
+/**
+ * hide/show detail or overview page
+ * @param idShow
+ * @param idHide
+ */
 function displayScreens(idShow,idHide) {
     document.getElementById(idShow).style.display = 'block';
     document.getElementById(idHide).style.display = 'none';
     document.getElementById(idHide).innerHTML = null;
 }
 
+/**
+ * Create div that will contain rendered data
+ * @param divID
+ * @param divContainer
+ * @returns {string}
+ */
 function createDiv(divID, divContainer) {
     let container = document.createElement('div');
     container.setAttribute('id', divID);
@@ -13,6 +24,10 @@ function createDiv(divID, divContainer) {
     return container.id;
 }
 
+/**
+ * Render home and detail page. filter results on home page.
+ * @type {{displayHome: render.displayHome, displayMovie: render.displayMovie, filterMovie: render.filterMovie}}
+ */
 export const render = {
     displayHome: function(cleanData){
         displayScreens("overview","movieDetail");
@@ -58,6 +73,9 @@ export const render = {
     }
 };
 
+/**
+ * loading state on homepage pageload.
+ */
 window.addEventListener('load',()=> {
     const loader = document.querySelector(".loader");
     loader.className += " hidden";
