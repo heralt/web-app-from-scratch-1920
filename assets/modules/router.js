@@ -1,5 +1,5 @@
 import {getMovie} from "./api.js";
-import {render/*,test*/} from "./render.js";
+import {render} from "./render.js";
 
 /**
  * @param data
@@ -39,7 +39,6 @@ export function init(){
             getMovie().then(json => {
                 render.displayHome(getOverview(json));
                 render.filterMovie(getOverview(json));
-                //test(getOverview(json))
             });
         },
         "": () => {
