@@ -53,7 +53,8 @@ To install this, you must clone this repo and open it in a IDE of your choice. T
 ## API
 The api that I used for this project is the [Ghibli API](https://ghibliapi.herokuapp.com/#section/Studio-Ghibli-API). This API 
 gives you information about 20 studio Ghibli movies. There is no key needed to access the api and there is no request limit.  ## Installation
-To get access to this API you can use the Fetch API. You don't need a key to get access.
+
+To get data from the API, you can use fetch. You dont need to use a API access token.
 ## App design
 These are the diagrams that reflect the final app designs I want to achieve.
 #### actor diagram
