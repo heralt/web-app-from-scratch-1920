@@ -49,6 +49,7 @@ To install this, you must clone this repo and open it in a IDE of your choice. T
 <!-- Add a link to your live demo in Github Pages 🌐-->
 ## Features
 - Showsmovie description of studio Ghibli movies. 
+- Filter movies on the homepage.
 ## API
 The api that I used for this project is the [Ghibli API](https://ghibliapi.herokuapp.com/#section/Studio-Ghibli-API). This API 
 gives you information about 20 studio Ghibli movies. There is no key needed to access the api and there is no request limit.  ## Installation
