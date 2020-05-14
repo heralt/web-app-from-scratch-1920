@@ -31,12 +31,15 @@ function createDiv(divID, divContainer) {
 export const render = {
     displayHome: function(cleanData){
         displayScreens("overview","movieDetail");
+
         let container = createDiv("movieContainer", "overview");
         const home = document.getElementById(container);
+
         let cards = cleanData.map(e => {
-            return `<div class="card"><a href="#movie/${e.id}" data-id="${e.id}"><h1 style="color: black">${e.title}</h1></a>
+            return `<div class="card"><a href="#movie/${e.id}" data-id="${e.id}"><h1>${e.title}</h1></a>
                 <p>${e.desc.substring(0, 300)}...</p></div>`;
         });
+
         home.innerHTML = cards.join('\n');
     },
     filterMovie: function(cleanData){
