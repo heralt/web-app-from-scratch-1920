@@ -18,23 +18,6 @@ export const render = {
         displayScreens("overview","movieDetail");
         let container = createDiv("movieContainer", "overview");
         const home = document.getElementById(container);
-
-        /*let result = cleanData.map(elem => {
-            return {
-                route: "#movie/"+elem.id,
-                title: elem.title,
-                desc: elem.desc
-            }
-        });
-
-        let directives = {
-
-        }
-
-        console.log(result);*/
-        //Transparency.render(document.getElementById("card"),homeScreen,directives);
-
-
         let cards = cleanData.map(e => {
             return `<div class="card"><a href="#movie/${e.id}" data-id="${e.id}"><h1 style="color: black">${e.title}</h1></a>
                 <p>${e.desc.substring(0, 300)}...</p></div>`;
